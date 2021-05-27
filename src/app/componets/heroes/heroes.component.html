@@ -1,0 +1,6 @@
+<h1 class="mt-5">Heroes <small>Marvel y DC</small></h1>
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <app-targeta-heroe (heroeSeleccionado)="verHeroe( $event )" [heroe] = "heroe" [index] = "i" *ngFor ="let heroe of heroes; let i = index"></app-targeta-heroe>
+</div>

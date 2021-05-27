@@ -1,0 +1,16 @@
+<div class="col animated fadeIn fast">
+    <div class="card h-100">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}</p>
+        </div>
+        <div class="card-footer">
+            <div class="d-grid gap-2">
+                <button (click)="verHeroe()" class="btn btn-outline-primary">Ver mas...</button>
+                <!-- <a class="btn btn-outline-primary" [routerLink]="['heroe',i]">Ver mas...</a> -->
+                <small class="text-muted text-center">{{heroe.aparicion}}</small>
+            </div>
+        </div>
+    </div>
+</div>
